@@ -1,8 +1,8 @@
-body {
+staticbody {
     background-color: #f8f9fa;
-  }
-  
-  .cart-item-image {
+}
+
+.cart-item-image {
     width: 80px;
     height: 80px;
     background-color: #e9ecef;
@@ -10,16 +10,15 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
-   
-  }
- 
-  .item-total,
-  #summary-items,
-  #total-cost {
+}
+
+.item-total,
+#summary-items,
+#total-cost {
     font-weight: bold;
-  }
-  
-  #payment-section {
+}
+
+#payment-section {
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
@@ -28,15 +27,15 @@ body {
     box-shadow: 0 0 10px rgba(166, 33, 33, 0.1);
 }
 
-#payment-section.card {
+#payment-section .card {
     margin-bottom: 20px;
 }
 
-#payment-section.card-body {
+#payment-section .card-body {
     padding: 20px;
 }
 
-#payment-section.form-group {
+#payment-section .form-group {
     margin-bottom: 20px;
 }
 
