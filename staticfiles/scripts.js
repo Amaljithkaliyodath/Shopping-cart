@@ -25,9 +25,7 @@ function updateItemTotal(row) {
 function updateSummary() {
     let items = document.querySelectorAll('#cart-items tr');
     let summaryItems = 0;
-    let totalCost = 0;
     items.forEach(item => {
-        let quantity = parseInt(item.querySelector('td:nth-child(2) input').value);
         let itemTotal = parseFloat(item.querySelector('.item-total').textContent.substring(1));
         summaryItems += itemTotal;
     });
@@ -36,7 +34,7 @@ function updateSummary() {
     let totalCostElement = document.getElementById('total-cost');
     let summaryItemsElement = document.getElementById('summary-items');
     summaryItemsElement.textContent = '£' + summaryItems.toFixed(2);
-    totalCost = summaryItems + shippingCost;
+    let totalCost = summaryItems + shippingCost;
     totalCostElement.textContent = '£' + totalCost.toFixed(2);
 }
 
